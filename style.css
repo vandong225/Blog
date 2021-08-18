@@ -1,0 +1,194 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* topbar */
+.topbar {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+.topbar__inner {
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.logo img {
+  width: 2rem;
+  padding: 1rem
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__item {
+  margin: 0 1rem;
+}
+
+.menu__link {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 1rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon__item {
+  padding: 0 0.5rem
+}
+
+.fa-facebook {
+  color: #0084ff
+}
+
+.fa-instagram-square {
+  color: red
+}
+
+/* end topbar */
+/* header */
+.header {
+  position: relative;
+}
+.header__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lora', serif;
+  color: #444
+}
+
+.header__title-sm {
+  position: absolute;
+  top: 5%;
+  font-size: 1.5rem;
+}
+
+.header__title-lg {
+  position: absolute;
+  top: 9%;
+  font-size: 6rem;
+}
+
+.header__title-lg h2 {
+  background: linear-gradient(to right, #30CFD0 0%, #f01111 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header__img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  margin-top: 100px;
+}
+
+/* posts */
+
+.posts {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 36px;
+}
+
+.post__item {
+  border-radius: 10px;
+  height: 220px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post__item:hover img {
+  -webkit-transform:scale(1.1);
+   transform:scale(1.1);
+}
+
+.post__img {
+  height: 90%;
+  width: 30%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+
+.post__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  transition: 0.25s linear;
+  clip-path: polygon(50% 0%, 85% 13%, 100% 60%, 84% 88%, 6% 100%, 7% 32%, 69% 18%);
+}
+
+.post__info {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  position: relative;
+}
+
+.post__info-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.post__title {
+  font-family: 'Lora', serif;
+  color: red;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.post__title a {
+  text-decoration: none;
+}
+
+.post__description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.post__tag {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.post__tag li:not(:first-child) {
+  padding: 10px;
+  background-color: #444;
+  margin:5px;
+}
+
+.post__tag a {
+  text-decoration: none;
+  color: #eee
+}
+/* footer */
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #eee;
+}
